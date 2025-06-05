@@ -1,0 +1,12 @@
+Cleanup
+Remember to correct the paths and group names in your cleanup commands as well:
+
+Bash
+
+sudo rm -rf /opt/secure_project # Corrected directory name
+sudo userdel -r admin_user
+sudo userdel -r developer_user # Don't forget to delete this user too
+sudo userdel -r auditor_user
+sudo groupdel project_admins   # Corrected group name
+sudo groupdel project_developers # Don't forget this group
+sudo groupdel project_auditors   # Corrected group name
